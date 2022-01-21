@@ -1,0 +1,67 @@
+body{
+    /* Vì mặc định margin của trình duyệt là 8px */
+    margin: 0px;
+}
+img-fluid{
+    /* Cho tất cả các ảnh trên website full rộng */
+    width: 100%;
+}
+
+#warpper{
+   /* Dựa trên file Photoshop sẽ đo chiều rộng tối đa của phần Wrapper */
+    width: 980px;
+    font-family: tahoma;
+    margin: 0 auto;
+}
+/* ==Header== */
+.header-top{
+    background-color: #272f54;
+    text-align: center;
+    padding-top: 21px;
+    padding-bottom: 17px;
+}
+
+.header-main{
+    background-color: #cb7802;
+    /* Chia menu thành 2 phần */
+    display: flex;
+    /* Đưa về 2 đầu */
+    justify-content: space-between;
+    align-items: center;
+    /* Trên Phải Dưới Trái */
+    padding: 6px 6px 6px 6px;
+}
+.menu{
+    /* Bỏ dấu chấm */
+    list-style: none;
+    /* Reset margin và padding về 0 */
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    /* Đưa tất cả các thành phần nằm ngàng */
+    display: inline-block
+}
+
+.menu li a{
+    /* Bỏ gạch chân */
+    text-decoration: none;
+    color: #fefbfb;
+    font-size: 12pt;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.menu li a:hover{
+    text-decoration: underline;
+}
+.form-search-input{
+    border: 1px solid #cccccc;
+    height: 20px;    
+}
+.form-search-btn{
+    border: 1px solid #cccccc;
+    height: 20px;    
+    text-transform: uppercase;
+    background-color: #272f54;
+    color: white;
+}
