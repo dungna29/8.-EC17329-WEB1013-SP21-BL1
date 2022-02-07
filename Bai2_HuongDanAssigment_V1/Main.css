@@ -65,3 +65,63 @@ img-fluid{
     background-color: #272f54;
     color: white;
 }
+
+.header-banner{
+    padding-top: 10px;
+}
+/* == Tin Tức == */
+
+#news h2.title{
+    color: #272f54;
+    font-size: 20pt;
+    font-weight: bold;
+    /* Trái phải sẽ là 0 px và trên dưới là 22px */
+    padding: 22px 0; 
+}
+#news .row{
+    /* Đưa các thành phần về dạng lưới */
+    display: grid;
+    /* 1fr tương ứng với 1 cột */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Các cột cách nhau 20px */
+    grid-gap: 20px;
+}
+#news .row p{
+    font-size: 13pt;
+    line-height: 20pt;
+    text-align: justify;
+    color: black;
+}
+/* Sau khi xử lý row thì sẽ tiến hành xử lý tiếp col */
+#news .col{
+    border: 1px solid #c2c2c2;
+    padding: 15px 30px;
+}
+#news h3{
+    text-align: justify;
+    /* Đưa margin trái phải về 0px */
+    margin: 15px 0;
+    font-size: 16pt;
+}
+
+#news a{
+    text-decoration: none;   
+    color: #b65724;
+    font-weight: bold;
+}
+
+/* ===Footer=== */
+footer{
+    background-color: #272f54;
+    text-align: center;
+    height: 50px;
+    
+}
+footer a{
+    text-decoration: none;
+}
+footer p{
+    color: white;
+    text-transform: uppercase;
+    display: inline-block  
+}
